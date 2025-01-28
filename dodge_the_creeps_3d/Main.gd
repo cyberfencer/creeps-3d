@@ -1,6 +1,6 @@
 extends Node
 
-export(PackedScene) var mob_scene
+@export var mob_scene: PackedScene
 
 
 func _ready():
@@ -15,18 +15,18 @@ func _unhandled_input(event):
 
 func _on_MobTimer_timeout():
 	# Create a Mob instance and add it to the scene.
-	var mob = mob_scene.instance()
+	var mob = mob_scene.instantiate()
 
 	# Choose a random location on Path2D.
 	var mob_spawn_location = get_node("SpawnPath/SpawnLocation")
-	mob_spawn_location.unit_offset = randf()
+	mob_spawn_location.progress_ratio = randf()
 
 	var player_position = $Player.transform.origin
 
 	add_child(mob)
 	# We connect the mob to the score label to update the score upon squashing a mob.
-	mob.connect("squashed", $UserInterface/ScoreLabel, "_on_Mob_squashed")
-	mob.initialize(mob_spawn_location.translation, player_position)
+	mob.connect("squashed", Callable($UserInterface/ScoreLabel, "_on_Mob_squashed"))
+	mob.initialize(mob_spawn_location.position, player_position)
 
 
 func _on_Player_hit():
