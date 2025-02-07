@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://2y3ar4s86yra"]
+[gd_scene load_steps=13 format=3 uid="uid://2y3ar4s86yra"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://dp478jyugrn7o" path="res://Player.tscn" id="2"]
@@ -25,14 +25,6 @@ sky_material = SubResource("ProceduralSkyMaterial_m3njk")
 background_mode = 2
 sky = SubResource("Sky_yutuu")
 tonemap_mode = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cr5ed"]
-albedo_color = Color(0.635294, 0.211765, 0.0235294, 1)
-
-[sub_resource type="CylinderMesh" id="3"]
-material = SubResource("StandardMaterial3D_cr5ed")
-radial_segments = 24
-rings = 1
 
 [sub_resource type="Curve3D" id="5"]
 _data = {
@@ -104,25 +96,6 @@ projection = 1
 fov = 48.6
 size = 24.0
 far = 40.0
-
-[node name="Cylinders" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
-
-[node name="MeshInstance" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, -15)
-mesh = SubResource("3")
-
-[node name="MeshInstance3" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 1, -15)
-mesh = SubResource("3")
-
-[node name="MeshInstance2" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 1, 16)
-mesh = SubResource("3")
-
-[node name="MeshInstance4" type="MeshInstance3D" parent="Cylinders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, 16)
-mesh = SubResource("3")
 
 [node name="SpawnPath" type="Path3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
