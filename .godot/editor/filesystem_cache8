@@ -1,15 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738954214
+::res://::1739297579
 Main.gd::GDScript::-1::1738953929::0::1::::<>Node<>::
-Main.tscn::PackedScene::1946344858681233962::1738953929::0::1::::<><>::res://Main.gd<>uid://dp478jyugrn7o::::res://Player.tscn<>uid://ha0ar5s2c3m4::::res://Mob.tscn<>uid://cqquurjk1i7yw::::res://ui_theme.tres<>res://ScoreLabel.gd
+Main.tscn::PackedScene::1946344858681233962::1738954767::0::1::::<><>::res://Main.gd<>uid://dp478jyugrn7o::::res://Player.tscn<>uid://ha0ar5s2c3m4::::res://Mob.tscn<>uid://cqquurjk1i7yw::::res://ui_theme.tres<>res://ScoreLabel.gd
 Mob.gd::GDScript::-1::1738953929::0::1::::<>CharacterBody3D<>::
 Mob.tscn::PackedScene::492840770380503333::1738953929::0::1::::<><>::res://Mob.gd<>uid://bicorb7we351t::::res://art/mob.glb
-MusicPlayer.tscn::PackedScene::-1::1738953929::0::1::::<><>::res://art/House In a Forest Loop.ogg
 Player.gd::GDScript::-1::1738953929::0::1::::<>CharacterBody3D<>::
 Player.tscn::PackedScene::8273964046187778922::1738953929::0::1::::<><>::res://Player.gd<>uid://d0ypm0v45pwdv::::res://art/player.glb
 ScoreLabel.gd::GDScript::-1::1738953929::0::1::::<>Label<>::
 ui_theme.tres::Theme::5930143872682747302::1738953929::0::1::::<><>::uid://cyxhh7ddkn62q::::res://fonts/Montserrat-Medium.ttf
-::res://art/::1738953929
+::res://art/::1738954215
 body.tres::StandardMaterial3D::-1::1738953929::0::1::::<><>::
 eye.tres::StandardMaterial3D::-1::1738953929::0::1::::<><>::
 House In a Forest Loop.ogg::AudioStreamOggVorbis::6912470962729766485::1738953929::1738954214::1::::<><>::
@@ -18,6 +17,6 @@ mob_body.tres::StandardMaterial3D::-1::1738953929::0::1::::<><>::
 mob_eye.tres::StandardMaterial3D::-1::1738953929::0::1::::<><>::
 player.glb::PackedScene::8964461739428881931::1738953929::1738954215::1::::<><>::
 pupil.tres::StandardMaterial3D::-1::1738953929::0::1::::<><>::
-::res://fonts/::1738953929
+::res://fonts/::1738954214
 LICENSE.txt::TextFile::-1::1738953929::0::1::::<><>::
 Montserrat-Medium.ttf::FontFile::6505293508080888906::1738953929::1738954214::1::::<><>::
